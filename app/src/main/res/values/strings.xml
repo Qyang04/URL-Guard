@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Virus_Detection_Application</string>
     <string name="label1">URL VIRUS DETECTION</string>
-    <string name="label2">Enter URL</string>
+    <string name="label2">Please Enter The Suspicious URL:</string>
     <string name="label3">VERIFY</string>
+    <string name="label4">This URL is</string>
 </resources>
