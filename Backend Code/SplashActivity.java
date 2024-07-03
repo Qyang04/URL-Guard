@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.virus_detection_application;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,3 +26,32 @@ public class SplashActivity extends AppCompatActivity{
 
     }
 }
+=======
+package com.example.virus_detection_application;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class SplashActivity extends AppCompatActivity{
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.splash);
+
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                finish();
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+            }
+        };
+        Timer opening = new Timer( );
+        opening.schedule(task,4000);
+
+    }
+}
+>>>>>>> 3ca3b248c43f2f4a683cb075aa0866f78c5dd616
